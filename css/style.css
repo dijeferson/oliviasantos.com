@@ -88,12 +88,14 @@ h2 {
 
 .profile #header {
     margin-bottom: 60px;
+    margin-top: 60px;
     text-align: center;
     position: relative;
 }
 
 .profile #avatar {
     display: inline-block;
+    margin-bottom: 20px;
 }
 
 .profile h1 {
