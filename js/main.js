@@ -1,4 +1,4 @@
-function onLoad() {
+function changeAvatar() {
     const id = "avatar";
     const baseName = "olivia_santos_memoji_";
     const numberOfImages = 14;
