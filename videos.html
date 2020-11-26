@@ -6,7 +6,10 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M54G1B2DMM"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'G-M54G1B2DMM');
     </script>
@@ -31,48 +34,48 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Olivia Santos</title>
+    <title>Olivia Santos - Videos</title>
 </head>
 
-<body onload="changeAvatar()">
+<body onLoad="changeAvatar();checkPasscode();">
     <div class="profile">
         <section id="wrapper">
             <header id="header">
                 <a onClick="changeAvatar()" target="_self">
                     <img id="avatar" src="" />
                 </a>
-                <h1>Olivia Santos</h1>
-                <h2 style="color: #cdd4da;">✉️ me [at] oliviasantos.com</h2>
+                <h1>Videos</h1>
+                <h2 style="color: #cdd4da;">by Olivia Santos</h2>
             </header>
         </section>
     </div>
 
-    <!--Articles-->
-    <section id="wrapper" class="home">
-        <div class="archive">
-            <ul>
-                <div class="post-item">
-                    <!-- Coming Soon
-                    <a href='videos.html'>
-                        Videos
-                        <h2>Check out videos featured by Olivia Santos on Youtube.</h2>
-                    </a>
-                    <br />
-
-                    <a href='art.html'>
-                        Art Gallery
-                        <h2>Check out our art gallery with Olivia's latests masterpieces.</h2>
-                    </a>
-                    -->
+    <section id="wrapper" class="post">
+        <article>
+            <aside>
+                <div id="login">
+                    <input id="inputCode" class="purple-input" /> <br />
+                    <button id="inputCodeButton" class="purple-button" onClick="checkPasscode()">Go!</button>
                 </div>
-            </ul>
-        </div>
+            </aside>
+
+            <section id="post-body">
+                <iframe id="vid" width="560" height="315"
+                    src="https://www.youtube.com/embed/videoseries?controls=0&amp;list=PLupC_zmbxfsY865v2OQJrCi4NPYsscymg"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen style="display:none; margin: auto;position: relative;"></iframe>
+                <h4><a href="index.html">< Back</a></h4>
+            </section>
+        </article>
     </section>
     <!--Footer-->
-    <footer style="height:auto; background-color:#eee;background-image: linear-gradient(180deg, white, rgb(216, 216, 216));">
+    <footer
+        style="height:auto; background-color:#eee;background-image: linear-gradient(180deg, white, rgb(216, 216, 216));">
         <h6>© 2014-2020 Olivia Santos - All rights reserved.</h6>
     </footer>
 
+    <script src="js/md5.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

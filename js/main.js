@@ -38,3 +38,21 @@ function getCookie(cookie_name) {
     }
     return "";
 }
+
+function checkPasscode() {
+    const enc = "3a1f9e20f1beac9b81a1e18e08b7f442";
+    var input = document.getElementById("inputCode").value;
+
+    cookie = getCookie("videoshow");
+
+    console.log(cookie);
+
+    if (cookie == "yes" || md5(input) == enc) {
+        document.getElementById("vid").style = "display:block;";
+        document.getElementById("login").style = "display:none;";
+        setCookie("videoshow", "yes", 30)
+    } else {
+        document.getElementById("vid").style = "display:none;";
+        setCookie("videoshow", "no", 30)
+    }
+}
