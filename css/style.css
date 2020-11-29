@@ -12,7 +12,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-    line-height: 1
+    line-height: 1;
+}
+
+#body {
+    height: 100%;
+    padding-bottom: 30px;
+    padding: 10px;
 }
 
 blockquote, q {
@@ -495,7 +501,7 @@ Post List
 }
 
 #post-list-footer {
-    border-top: 1px solid #eee;
+    /* border-top: 1px solid #eee; */
     margin-top: 20px;
     padding-top: 100px;
 }
@@ -523,7 +529,7 @@ Post List
 
 #footer {
     margin-top: 50px;
-    background-color: #fafafa;
+    /* background-color: #fafafa; */
     padding-top: 50px;
     padding-bottom: 50px;
     font: inherit;
@@ -537,11 +543,15 @@ Post List
     color: #c0c0c0;
 }
 
-footer {
+/* footer {
     bottom:0;
     width:100%;
-    height:100px;
-}
+    height:30px;
+    margin-top: -30px;
+    position: absolute;
+
+    background-color:#eee;background-image: linear-gradient(180deg, white, rgb(216, 216, 216));
+} */
 
 /* Post Page */
 
@@ -944,3 +954,8 @@ a.symbol:hover {
 .page-tags ul li a:hover {
     color: #710DED;
 }
+
+#container {
+    min-height:100%;
+    position:relative;
+ }
