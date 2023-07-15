@@ -58,7 +58,7 @@ function checkPasscode() {
 }
 
 function setCopyright() {
-    var cp = "© 2014-" + new Date().getFullYear() + " Olivia Santos - All rights reserved.";
+    var cp = "© 2014-" + new Date().getFullYear() + " (c) Olivia Santos - All rights reserved.";
     document.getElementById("copyright").textContent = cp;
 }
 
